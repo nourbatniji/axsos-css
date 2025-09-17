@@ -1,0 +1,30 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 15px;
+}
+
+h1,
+h2 {
+    color: #fff;
+}
+
+h1 {
+    background-color: black;
+}
+
+h1 span {
+    color: #00EFFF;
+}
+
+h2 {
+    text-align: center;
+    font-style: italic;
+    background-color: #673A96;
+}
+
+h3 {
+    text-align: right;
+    text-decoration: underline;
+    background-color: #ADD8E6;
+    color: #3A1C6B;
+}
