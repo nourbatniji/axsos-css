@@ -1,0 +1,25 @@
+.search-btn {
+    color: #1e9ea0;
+    border: 2px #1e9ea0 solid;
+    padding: 5px 45px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+}
+
+.plus-btn {
+    background-color: #04d1b2;
+    color: #fff;
+    padding: 7px 13px;
+    border-radius: 50%;
+    font-size: 18px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.createAcc-btn {
+    background-color: #2b78e4;
+    color: #fff;
+    padding: 8px 25px;
+    border: 2px #000 solid;
+    box-shadow: 3px 3px 0 0px #000;
+}
