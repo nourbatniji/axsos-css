@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "M-Plus-rounded";
+    src: url("./Fonts/M_PLUS_Rounded_1c/MPLUSRounded1c-Regular.ttf");
+}
+
+body {
+    font-family: "M-Plus-rounded";
+    color: #ffffff;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: #333333;
+    border-radius: 4px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+li {
+    padding: 0 10px;
+}
+
+a {
+    color: #c8c8c8;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+#active {
+    color: #ffffff;
+}
+
+button {
+    color: #ffffff;
+    background-color: #14a2b8;
+    padding: 5px 15px;
+    font-size: 15px;
+    cursor: pointer;
+    border: 3px solid black;
+    box-shadow: 3px 3px 0 0 black;
+}
