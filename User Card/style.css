@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "M_PLUS_Rounded";
+    src: url("./Fonts/M_PLUS_Rounded_1c/MPLUSRounded1c-Medium.ttf");
+}
+
+.container {
+    font-family: "M_PLUS_Rounded";
+    width: 40%;
+    margin: 40px auto;
+    border: 2px solid #cccccc;
+    border-radius: 4px;
+    position: relative;
+}
+
+.cover {
+    background-color: #14a2b8;
+    height: 100px;
+}
+
+.user-img {
+    background-color: white;
+    width: 103px;
+    height: 103px;
+    border: 2px solid #cccccc;
+    border-radius: 50%;
+    padding: 5px;
+    position: absolute;
+    top: 48px;
+    left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    margin-top: 35px;
+    padding: 20px;
+}
+
+.content .location {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    font-size: 16px;
+
+    img {
+        width: 12px;
+        margin-right: 10px;
+    }
+}
+
+.content .settings {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+
+    img {
+        width: 16px;
+        margin-right: 10px;
+    }
+
+    a {
+        color: #2b78e4;
+    }
+}
