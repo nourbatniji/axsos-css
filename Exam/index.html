@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <section class="head">
+        <div class="container">
+            <div class="logo">
+                <img src="Assets/nav-logo.png" alt="logo-img">
+                <h1>Ota<span>ku</span></h1>
+            </div>
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass" onclick="search()" id="search-icon"></i>
+                <input type="search" placeholder="search" name="search-input" id="search-input">
+                <i class="fa-solid fa-microphone" id="mic-icon"></i>
+            </div>
+            <div class="likes">
+                <i class="fa-solid fa-heart fa-xl"></i>
+                <span id="likesCount"></span>
+            </div>
+        </div>
+    </section>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Category</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">About</a></li>
+                <button type="submit">sign in</button>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="slider container">
+        <img src="Assets/Slider/bd-item-1.jpg" alt="slider-image" class="slide fade">
+        <img src="Assets/Slider/bd-item-2.jpg" alt="slider-image" class="slide fade">
+        <img src="Assets/Slider/blog-details-pic.jpg" alt="slider-image" class="slide fade">
+        <img src="Assets/Slider/tv-2.jpg" alt="slider-image" class="slide fade">
+        <img src="Assets/Slider/tv-5.jpg" alt="slider-image" class="slide fade">
+        <button onclick="removeButton(this)">Watch now</button>
+        <i class="fa-solid fa-chevron-right fa-flip-horizontal fa-xl" id="next" onclick="plusSlides(1)"></i>
+        <i class="fa-solid fa-chevron-left fa-flip-horizontal fa-xl" id="prev" onclick="plusSlides(-1)"></i>
+    </section>
+
+    <section class="home container">
+        <div class="trending-now">
+            <h1>Trending Now</h1>
+            <div class="movies">
+                <div class="movie">
+                    <img src="Assets/trendingnow/Naruto.jpg" alt="movie-cover">
+                    <div class="like-btn">
+                        <p>Naruto</p>
+                        <i class="fa-solid fa-heart fa-xl" onclick="likesCounter()"></i>
+                    </div>
+                    <button>Show More</button>
+                </div>
+                <div class="movie">
+                    <img src="Assets/trendingnow/One Piece.jpg" alt="movie-cover">
+                    <div class="like-btn">
+                        <p>One Piece</p>
+                        <i class="fa-solid fa-heart fa-xl" onclick="likesCounter()"></i>
+                    </div>
+                    <button>Show More</button>
+                </div>
+                <div class="movie">
+                    <img src="Assets/trendingnow/Attack on Titan.jpg" alt="movie-cover">
+                    <div class="like-btn">
+                        <p>Death Note</p>
+                        <i class="fa-solid fa-heart fa-xl" onclick="likesCounter()"></i>
+                    </div>
+                    <button>Show More</button>
+                </div>
+                <div class="movie">
+                    <img src="Assets/trendingnow/Dragon Ball.jpg" alt="movie-cover">
+                    <div class="like-btn">
+                        <p>Dragon Ball</p>
+                        <i class="fa-solid fa-heart fa-xl" onclick="likesCounter()"></i>
+                    </div>
+                    <button>Show More</button>
+                </div>
+                <div class="movie">
+                    <img src="Assets/trendingnow/Hunter x Hunter.jpg" alt="movie-cover">
+                    <div class="like-btn">
+                        <p>Hunter</p>
+                        <i class="fa-solid fa-heart fa-xl" onclick="likesCounter()"></i>
+                    </div>
+                    <button>Show More</button>
+                </div>
+                <div class="movie">
+                    <img src="Assets/trendingnow/Steinsgate.jpg" alt="movie-cover">
+                    <div class="like-btn">
+                        <p>Steinsgate</p>
+                        <i class="fa-solid fa-heart fa-xl" onclick="likesCounter()"></i>
+                    </div>
+                    <button>Show More</button>
+                </div>
+            </div>
+        </div>
+        <div class="top-views">
+            <h1>Top Views</h1>
+            <img src="Assets/topviews/tv-1.jpg" alt="top-views">
+            <img src="Assets/topviews/tv-3.jpg" alt="top-views">
+            <img src="Assets/topviews/tv-4.jpg" alt="top-views">
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <ul class="top-list">
+                <li>
+                    <h2>Website Info</h2>
+                    <a href="#">Otaku</a>
+                    <a href="#">About Us</a>
+                </li>
+                <li>
+                    <h2>Important Links</h2>
+                    <a href="#">Anime List</a>
+                    <a href="#">Anime News</a>
+                </li>
+                <li>
+                    <h2>Legal Info & Policy</h2>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                </li>
+                <li>
+                    <h2>Help and Support</h2>
+                    <a href="#">Technical Support</a>
+                    <a href="#">FAQ</a>
+                </li>
+            </ul>
+            <ul class="bottom-list">
+                <li id="social">
+                    <h2>Social Media Link</h2>
+                    <div class="icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f fa-2xl"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter fa-2xl"></i></a>
+                    </div>
+                </li>
+                <li id="copyrights">
+                    <h2>Copyrights Info</h2>
+                    <p>Copyright &copy;2024 All rights reserved | This template is made with by
+                        <a href="#">Axsos Academy</a>
+                    </p>
+                </li>
+                <li>
+                    <h2>Contact Us</h2>
+                    <input type="email" placeholder="email@axos.academy">
+                    <input type="text" placeholder="yourname">
+                    <button type="submit">Send</button>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
